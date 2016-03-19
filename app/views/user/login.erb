@@ -1,0 +1,16 @@
+<div>
+	<div class="six columns offset-by-three">
+		<h3>Log In</h3>
+		<form action="/login" method="POST">
+			<div class="row">
+				<label for="email">Email</label>
+				<input name="email" type="text"></input>
+				
+				<label for="password">Password</label>
+				<input name="password" type="password"></input>
+			</div>		
+			<input class="button-primary" type="submit" value="Submit">
+			<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+		</form>
+	</div>
+</div>
